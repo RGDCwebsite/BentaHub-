@@ -1,0 +1,339 @@
+PROJECT PLAN: Design Thinking Final Outputs
+Your group has 2 official submissions, but 3 major tasks inside them:
+Website (Prototype)
+
+
+Research Paper
+
+
+Final Pitch Presentation + Script
+
+
+Below is the complete task breakdown with assigned members.
+
+1. WEBSITE (Prototype)
+Goal: Build the functional version of the Mobile POS Website (even if low fidelity).
+Team
+Rich – Developer
+
+
+Build the basic structure of the website
+
+
+Implement essential screens (home, sales tracker, inventory, daily log)
+
+
+Ensure offline capability or at least simulate offline design
+
+
+Integrate Allen’s design layout
+
+
+Allen – Designer
+
+
+Produce the wireframes, UI layout, color palette, and typography
+
+
+Provide visual assets and interface mockups
+
+
+Guide the user flow and UX (what pages appear and how a user moves through the site)
+
+
+Coordinate with Rich to make sure the website reflects the intended design
+
+
+Output Needed
+Wireframes (low fidelity)
+
+
+UI mockups (medium fidelity)
+
+
+Screenshot set for the research paper and presentation
+
+
+Functional website link or demo file
+
+
+Timeline Recommendation
+Week 1: Wireframes + basic structure
+
+
+Week 2: UI + working demo sections
+
+
+Week 3: Final adjustments + screenshots for the report and pitch
+
+
+
+2. RESEARCH PAPER
+Goal: Produce the full “Design Thinking for Social Good Research Report.”
+Team
+Allen – Author
+
+
+All sections except the Prototype phase
+
+
+Abstract
+
+
+Introduction (3 pages)
+
+
+Review of Related Literature
+
+
+Methodology (Empathize, Define, Ideate)
+
+
+Results and Discussion
+
+
+Conclusion
+
+
+References
+
+
+Appendices (except prototype visuals)
+
+
+Isaac – Prototype Phase Writer
+
+
+Section V.E: Prototype Phase
+
+
+Type of prototype
+
+
+Development process
+
+
+Materials and tools
+
+
+Work done by Rich and Allen
+
+
+Descriptions of features and user flow
+
+
+Provide a written explanation of how the prototype works
+
+
+Supply captions for the images/screenshots
+
+
+Output Needed
+Full written research report
+
+
+APA 7 citations
+
+
+Complete appendices (empathy map, persona, interview notes, worksheets)
+
+
+Timeline Recommendation
+Nov 28: Draft Abstract, Intro, RRL
+
+
+Nov 29: Draft Methodology + Define + Ideate
+
+
+Nov 30: Isaac completes Prototype Phase + Allen completes Results and Conclusion
+
+
+Dec 1: Editing, merging, final check, APA cleanup
+
+
+
+3. FINAL PITCH PRESENTATION
+Goal: Prepare an engaging 5-minute pitch with a maximum of 10 slides.
+Team
+Gab & Henry – Slide Creators
+
+
+Build all slides based on the research paper
+
+
+Keep visuals clean and consistent
+
+
+Insert prototype images
+
+
+Prepare persona layout, empathy insights, HMW, ideation visuals
+
+
+Ensure the deck stays under 10 content slides
+
+
+Slide Breakdown
+Title Slide
+
+
+The Problem
+
+
+The User
+
+
+Empathy Insights
+
+
+POV Statement
+
+
+HMW Design Challenge
+
+
+Ideation Summary
+
+
+Chosen Solution
+
+
+Prototype
+
+
+STS Impact
+
+
+References (optional)
+
+
+Script Team
+Markell, Drei, Fort—Scriptwriters
+
+
+Write the 5-minute pitch script
+
+
+Divide speaking lines among at least 2–3 members
+
+
+Make sure transitions are clean and on time
+
+
+Prepare answers for possible Q&A questions
+
+
+Output Needed
+Complete slide deck
+
+
+5-minute script
+
+
+Q&A prep notes
+
+
+Timeline Recommendation
+Nov 30: Gather content from the research paper draft
+
+
+Dec 1: Create slide design + rough script
+
+
+Dec 2: Revise slides after prototype is finished
+
+
+Dec 2: Final script + practice + timing
+
+
+
+4. OVERALL TIMELINE (Clean Overview)
+Foundations
+Allen: Draft Intro + RRL
+
+
+Rich: Start website skeleton
+
+
+Allen (Designer): Wireframes
+
+
+Gab & Henry: Slide theme template
+
+
+Main Work
+Allen: Methodology
+
+
+Isaac: Prototype Phase draft
+
+
+Rich: Add core features to website
+
+
+Allen: UI mockups
+
+
+Slide team: Insert early content
+
+
+Script team: First draft
+
+
+Finish Core Outputs
+Prototype completed
+
+
+Prototype section finished
+
+
+Results + Discussion written
+
+
+Slides finalized
+
+
+Script finalized
+
+
+Polishing
+Merge full research paper
+
+
+APA formatting
+
+
+Appendices
+
+
+Practice pitching
+
+
+Final website cleanup
+
+
+
+
+
+
+
+
+
+
+Quick Assignment Table
+Task
+Members
+Website Development
+Rich
+Website Design
+Allen
+Research Paper (main sections)
+Allen
+Research Paper (Prototype Phase)
+Isaac
+Presentation Slides
+Gab, Henry
+Pitch Script
+Markell, Drei, Fort
+
+

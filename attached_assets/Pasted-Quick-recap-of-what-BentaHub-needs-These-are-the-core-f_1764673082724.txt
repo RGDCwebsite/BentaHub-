@@ -1,0 +1,276 @@
+Quick recap of what BentaHub needs
+These are the core features we already planned for the POS website:
+Simple home or login page
+Store dashboard with a quick summary
+Today’s sales
+Number of transactions
+Low stock alerts
+
+
+Product and inventory management
+Add, edit, delete products
+Set price, stock, category
+Low stock warning
+
+
+Sales or “New Transaction” page
+Search or pick items
+Set quantity
+Auto compute total and change
+Choose mode of payment (cash or QR)
+Save transaction to history
+
+
+Sales and expense records
+Daily, weekly, monthly totals
+List of past transactions
+Simple expense log for deliveries, bills, and other costs
+
+
+Basic reports
+Simple tables that show trends over time
+Example: total sales per day, most sold products
+
+
+QR payment support
+A place to store and show the store’s GCash or Maya QR
+Short reminder text on how to pay using QR
+
+
+“Community” or “Support” features (lightweight)
+Page with guides or tips on how to use the site
+Space to show links to training like DTI “Tindahan Mo, e-Level Up Mo”
+
+
+Offline friendly behavior
+Data saved in the browser (localStorage) so it still works with weak internet
+
+
+Very simple interface
+Big buttons
+Filipino or Taglish labels where helpful
+Minimal clicks to finish a sale
+Step-by-step Guide
+Step 1: Choose how to build BentaHub
+Give him these two simple options:
+Basic code setup
+Use: HTML, CSS, JavaScript
+Store data using localStorage in the browser
+Best for showing a “real” working prototype
+
+
+Website builder (if he really cannot code)
+
+
+Use Wix, Google Sites, etc.
+But this will be hard for a POS with inventory and sales logic
+
+
+For this project, basic HTML, CSS, and JavaScript is the safest and most flexible. Tell Rich that the goal is not perfect code. The goal is a working demo that can record products and sales.
+
+Step 2: Set up the project folder
+Inside one main folder called bentahub:
+index.html
+styles.css
+app.js
+assets/ (for icons, sample QR image, logo, etc)
+
+
+Connect the files:
+In index.html head section:
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+
+
+Step 3: Build a simple layout
+In index.html, create:
+A top bar with the title “BentaHub”
+A side menu or top menu with buttons:
+Dashboard
+Inventory
+New Sale
+Records
+QR and Payments
+Help or Training
+
+
+Use simple <div> sections and give them id like dashboard, inventory, sales, etc.
+ Show one section at a time using JavaScript by hiding the others.
+
+Step 4: Inventory page
+Goal: Maria can list all her products and see the current stock.
+On the Inventory section:
+Table for products with columns:
+Product name
+Category
+Price
+Stock
+Actions (Edit, Delete)
+
+
+A form at the top or side that has:
+Input for product name
+Input for price
+Input for stock
+Dropdown for category (for example: snacks, drinks, load, others)
+“Save product” button
+
+
+In app.js:
+Create an array products
+On page load, read products from localStorage
+When the user saves a product:
+Push it into products
+Save products to localStorage
+Rebuild the table view
+
+
+This already shows that BentaHub can track stock.
+
+Step 5: New Sale page
+Goal: The store owner can quickly record a sale.
+Elements needed:
+Dropdown or search field to choose product from the inventory list
+Quantity input
+“Add to cart” button
+A table or list that shows the current cart
+Product name
+Quantity
+Price
+Subtotal
+
+
+A summary box:
+
+
+Total amount
+Payment type: radio button for “Cash” or “QR”
+Amount received (if cash)
+Change due
+“Confirm sale” button
+
+
+In app.js:
+When a product is added to cart, update the cart array and recompute total
+
+
+When “Confirm sale” is clicked:
+Save sale details to a sales array in localStorage
+Subtract quantities from products stock
+Clear the cart
+Show a simple “Sale recorded” message
+
+
+
+Step 6: Dashboard page
+Goal: Quick overview for Maria.
+Show:
+Today’s total sales amount
+Number of transactions today
+Number of out of stock or low stock items
+
+
+In app.js:
+Read sales from localStorage
+Filter by today’s date
+Compute total and count
+Read products and find those below a stock threshold such as 5
+
+
+This does not need to be very fancy. Numbers and maybe simple cards are enough.
+
+Step 7: Records and reports page
+Goal: Show history and basic patterns.
+Include:
+A table of transactions with:
+Date and time
+Items count
+Total amount
+Payment type
+
+
+Filter by date range (for example a dropdown or two date inputs)
+Optional: simple “Summary” section such as:
+Total sales in selected period
+Most sold product
+
+
+If can add a basic bar chart. If not, a table with totals is okay for class.
+
+Step 8: Expenses tracker (simple version)
+Inside the Records page or a separate tab:
+Form to add an expense:
+Description
+Amount
+Date
+
+
+Table to list all expenses
+Show “Total expenses this month”
+
+
+Store this in expenses using localStorage as well.
+This supports your “financial access and tracking” theme.
+
+Step 9: QR and payments page
+Goal: Make digital payments visible and simple.
+Elements:
+A box that shows:
+Text like “Scan this QR to pay using GCash or Maya”
+
+
+An image area to hold a sample QR (even if it is only a placeholder)
+A short explanation of how to use QR payments in Taglish
+
+
+If ever wanted let the user upload their own QR image using an <input type="file">, but a static image is enough for a prototype. No need for real payment integration.
+
+Step 10: Help and training page
+This page can:
+Explain in simple steps how to use BentaHub:
+How to add products
+How to record a sale
+How to see reports
+
+
+Include links to real programs, for example:
+DTI “Tindahan Mo, e-Level Up Mo” post
+Other digital training for MSMEs
+
+
+This shows that the site supports digital and financial literacy, which matches your research paper.
+
+Step 11: Keep it offline-friendly
+If not familiar with service workers, do this minimum:
+Make sure all data (products, sales, expenses) is saved in localStorage only
+Avoid features that need a server
+Keep the site as a single-page application, so once loaded, it works even if the internet slows down
+
+
+If he already knows how to add a service worker, he can later cache the files, but that is extra.
+
+Step 12: Styling and UX polish
+Use a simple color palette, for example, teal with a dark blue accent
+Use large buttons for key actions like “New Sale” and “Save.”
+Use clear Filipino or Taglish labels such as “Mag record ng benta” or “Idagdag sa paninda.”
+Make text readable on both laptop and phone-sized screens
+
+
+Can use plain CSS or a basic framework like Bootstrap if he already knows it.
+
+Step 13: Fill with sample data and test flows
+Before you take screenshots or record a demo:
+Add several sample products (soft drinks, noodles, load, snacks)
+Record a few sales with both cash and QR
+Add some expenses
+Check if:
+Inventory updates after each sale
+Daily totals look correct
+Low stock alerts appear
+
+
+These test runs will give you good screenshots for:
+Research paper methodology and prototype section
+Final pitch slides
+Website visuals in the appendices
+
