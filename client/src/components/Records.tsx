@@ -17,11 +17,12 @@ interface RecordsProps {
   expenses: Expense[];
   onAddExpense: (expense: Omit<Expense, 'id'>) => void;
   onDeleteExpense: (id: string) => void;
+  onDeleteTransaction: (id: string) => void;
 }
 
 type DateFilter = 'today' | 'week' | 'month' | 'all';
 
-export function Records({ transactions, expenses, onAddExpense, onDeleteExpense }: RecordsProps) {
+export function Records({ transactions, expenses, onAddExpense, onDeleteExpense, onDeleteTransaction }: RecordsProps) {
   const [dateFilter, setDateFilter] = useState<DateFilter>('today');
   const [isExpenseDialogOpen, setIsExpenseDialogOpen] = useState(false);
   const [expenseForm, setExpenseForm] = useState({
@@ -208,6 +209,14 @@ export function Records({ transactions, expenses, onAddExpense, onDeleteExpense 
                           )}
                         </div>
                       </div>
+                      <Button
+                        size="icon"
+                        variant="ghost"
+                        onClick={() => onDeleteTransaction(tx.id)}
+                        data-testid={`button-delete-transaction-${tx.id}`}
+                      >
+                        <Trash2 className="h-4 w-4 text-destructive" />
+                      </Button>
                     </CardContent>
                   </Card>
                 ))}
